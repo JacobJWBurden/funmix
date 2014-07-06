@@ -1,0 +1,20 @@
+mixin attention() {
+	&:hover, &:active, &:focus {
+		@content;
+	}
+}
+
+/*
+HOW TO USE:
+
+.btn  {
+	color: $blue;
+
+	@include attention() {
+		background-color: $blue;
+		color: #FFF;
+	}
+
+}
+
+*/
